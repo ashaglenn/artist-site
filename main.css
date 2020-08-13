@@ -1,0 +1,502 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  }
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+  }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+  }
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+  }
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+  }
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea { resize: vertical;}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+  }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+* { box-sizing: border-box;}
+
+html { font-size: 16px; }
+
+body {
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  }
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+  }
+
+body { font-family: Arial, Helvetica, sans-serif;}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
+
+button {
+  width:
+  background-color:
+  color:
+  border: none;
+  border-radius:
+  cursor: pointer;
+  font-size:
+  text-align: center;
+  padding:
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Grid Areas
+   ========================================================================== */
+
+   .section-1 { grid-area: section-1; }
+   .section-2 { grid-area: section-2; }
+   .section-3 { grid-area: section-3; }
+   .footer { grid-area: footer; }
+   .left-side { grid-area: left-side; }
+   .right-side { grid-area: right-side; }
+   .portfolio { grid-area: portfolio; }
+   .photos { grid-area: photos; }
+   .img-1{ grid-area: img-1; }
+   .img-2{ grid-area: img-2; }
+   .img-3{ grid-area: img-3; }
+   .img-4{ grid-area: img-4; }
+   .img-5{ grid-area: img-5; }
+   .img-6{ grid-area: img-6; }
+   .img-7{ grid-area: img-7; }
+   .img-8{ grid-area: img-8; }
+   .img-9{ grid-area: img-9; }
+   .img-10{ grid-area: img-10; }
+   .img-11{ grid-area: img-11; }
+   .img-12{ grid-area: img-12; }
+   .contact { grid-area: contact; }
+   .fa-facebook{ grid-area: fa-facebook; }
+   .fa-twitter{ grid-area: fa-twitter; }
+   .fa-instagram{ grid-area: fa-instagram; }
+   .fa-linkedin{ grid-area: fa-linkedin; }
+   .fa-pinterest{ grid-area: fa-pinterest; }
+   .fa-youtube{ grid-area: fa-youtube; }
+
+/* ==========================================================================
+   Grid Layout
+   ========================================================================== */
+
+.grid-container {
+  width: 100%;
+  }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'section-1'
+    'section-2'
+    'section-3'
+    'footer';
+  }
+
+.section-1 {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  grid-template-areas:
+		'left-side right-side';
+  }
+
+.section-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    'consult button-1';
+  }
+
+.section-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'portfolio'
+    'photos';
+  }
+
+.photos {
+  display: grid;
+  grid-template-areas:
+    'img-1 img-2 img-3 '
+    'img-4 img-5 img-6 '
+    'img-7 img-8 img-9 '
+    'img-10 img-11 img-12 ';
+  }
+
+.footer {
+  display: grid;
+  grid-template-areas:
+    'contact';
+  }
+
+/* ==========================================================================
+   Webpage styles
+   ========================================================================== */
+
+.section-1{
+  text-align: center;
+	background-image:
+	align-content: center;
+  }
+
+.left-side {
+  background-image: url('https://images.unsplash.com/photo-1551180452-aea351b23949?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  }
+
+.right-side{
+  padding: 40px;
+  }
+
+a{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1em;
+  line-height: 50px;
+  color: black;
+  }
+
+a+a{
+  margin-left: 10px;
+  }
+
+.section-1 h1 {
+  font-size: 5em;
+  font-family: 'Halant', serif;
+	grid-area: h1;
+  }
+
+.section-1 h2{
+	font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.4em;
+  line-height: 50px;
+  }
+
+.section-3{
+  text-align: center;
+	background-image:
+	min-height: 700px;
+  justify-content: center;
+	padding-bottom:
+	padding-top:
+  width:100%;
+  grid-gap: 30px;
+	}
+
+.portfolio h2{
+  font-size: 4em;
+  font-family: 'Halant', serif;
+  }
+
+.photos img{
+  width: 100%;
+  height:300px;
+  object-fit: cover;
+  }
+
+.photos {
+  grid-gap: 40px;
+  }
+
+.footer{
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 60px;
+  }
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 0px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  }
+
+input[type=submit] {
+  background-color: grey;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+
+input[type=submit]:hover {
+  background-color: black;
+  }
+
+.contact {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  margin: 60px;
+  }
+
+.fa {
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  height: 50px;
+  width: 50px;
+  padding: 30px;
+  }
+
+
+    /* ==========================================================================
+       Mobile styles
+       ========================================================================== */
+
+@media (max-width: 800px) {
+  .grid-container  {
+    display: grid;
+    grid-template-areas:
+      'section-1'
+      'section-2'
+      'section-3'
+      'footer';}
+
+  .section-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+  		'left-side'
+      'right-side';}
+
+  .section-3 {
+    display: grid;
+    grid-template-areas:
+      'portfolio'
+      'photos';}
+
+  .photos {
+    display: grid;
+    grid-template-areas:
+      'img-1'
+      'img-2'
+      'img-3'
+      'img-4'
+      'img-5'
+      'img-6'
+      'img-7'
+      'img-8'
+      'img-9'
+      'img-10'
+      'img-11'
+      'img-12';}
+
+  .footer {
+    display: grid;
+    grid-template-areas:
+      'contact';}
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
